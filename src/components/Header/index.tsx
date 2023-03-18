@@ -15,17 +15,27 @@ export function Header(props: HeadingProps) {
 
     return (
         <S.Container>
-            A
+            <h1>L</h1>
 
-            <Switch 
-                onChange={props.toggleTheme}
-                checked={title === 'dark'}
-                checkedIcon={false}
-                uncheckedIcon={false}
-                handleDiameter={20}
-                offColor="#ccc"
-                onColor='#001aff'
-            />
+
+
+            <S.Menu>
+                <a href="">About</a>
+
+                <a href="">Articles</a>
+
+                <button>Sabscribe</button>
+
+                <Switch 
+                    onChange={props.toggleTheme}
+                    checked={title === 'dark'}
+                    checkedIcon={false}
+                    uncheckedIcon={false}
+                    handleDiameter={20}
+                    offColor="#ccc"
+                    onColor='#001aff'
+                />
+            </S.Menu>
         </S.Container>
     )
 }
