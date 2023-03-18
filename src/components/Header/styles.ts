@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { motion } from "framer-motion";
+
 export const Container = styled.header`
     height: 60px;
     color: #fff;
@@ -7,10 +9,10 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+`;
 
-    > h1 {
-        color: ${props => props.theme.colors.text};
-    }
+export const Logo = styled(motion.h1)`
+    color: ${props => props.theme.colors.text};
 `;
 
 export const Menu = styled.nav`

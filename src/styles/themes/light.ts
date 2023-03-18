@@ -6,6 +6,7 @@ export default {
         secondary: '#D63AF9',
         
         background: '#f5f5f5',
-        text: '#333'
+        text: '#333',
+        subText: '#1D3461'
     },
 };
