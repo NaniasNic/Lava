@@ -7,6 +7,7 @@ export default {
         
         background: '#f5f5f5',
         text: '#333',
-        subText: '#1D3461'
+        subText: '#1D3461',
+        desc: '#4D5359'
     },
 };
