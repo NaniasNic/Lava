@@ -36,7 +36,7 @@ export function Articles() {
             >
                 {
                     [
-                        { cardId: "Card one", back: require("../../assets/img-barco.jpg") ,firstTitle: "Tunza", secondTitle: "Rugged Port" },
+                        { cardId: "Card one", back: ("../../assets/img-barco.jpg") ,firstTitle: "Tunza", secondTitle: "Rugged Port" },
                         { cardId: "Card two",  back: ("../../assets/img-teste.jfif") ,firstTitle: "Timor", secondTitle: "Untouched Beaches" },
                         { cardId: "Card three", back: ("../../assets/img-oceano.jfif") ,firstTitle: "Lombook", secondTitle: "Endless Lava" },
                     ].map(cardsName => (
