@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components";
 
 import { Header } from "./components/Header";
 import { About } from "./components/About";
+import { Articles } from "./components/Articles";
 
 function App() {
   const [ theme, setTheme ] = useState(light);
@@ -23,6 +24,7 @@ function App() {
         toggleTheme={toggleTheme}
       />
       <About />
+      <Articles />
       <GlobalStyles />
     </ThemeProvider>
   )

@@ -3,15 +3,18 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Container = styled.header`
+    width: 100%;
     height: 60px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    position: fixed;
 `;
 
 export const Logo = styled(motion.h1)`
+    font-size: 36px;
     color: ${props => props.theme.colors.text};
 `;
 
