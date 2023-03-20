@@ -18,7 +18,7 @@ export const Logo = styled(motion.h1)`
     color: ${props => props.theme.colors.text};
 `;
 
-export const Menu = styled.nav`
+export const Menu = styled(motion.nav)`
     display: flex;
     justify-content: center;
     align-items: center;

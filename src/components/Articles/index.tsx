@@ -18,7 +18,7 @@ export function Articles() {
                 whileInView="last"
                 variants={variantsLogo}
                 viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", stiffness: 30, delay: 0.8 }}
+                transition={{ type: "spring", stiffness: 30, delay: 1.1 }}
             >
                 <h1>Latest articles</h1>
 
@@ -32,13 +32,13 @@ export function Articles() {
                 whileInView="last"
                 variants={variantsCards}
                 viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", stiffness: 30, delay: 0.8 }}
+                transition={{ type: "spring", stiffness: 30, delay: 1.3 }}
             >
                 {
                     [
-                        { cardId: "Card one", back: ("../../public/img-barco.jpg") ,firstTitle: "Tunza", secondTitle: "Rugged Port" },
-                        { cardId: "Card two",  back: ("../../public/img-teste.jfif") ,firstTitle: "Timor", secondTitle: "Untouched Beaches" },
-                        { cardId: "Card three", back: ("../../public/img-oceano.jfif") ,firstTitle: "Lombook", secondTitle: "Endless Lava" },
+                        { cardId: "Card one", back: require("../../assets/img-barco.jpg") ,firstTitle: "Tunza", secondTitle: "Rugged Port" },
+                        { cardId: "Card two",  back: ("../../assets/img-teste.jfif") ,firstTitle: "Timor", secondTitle: "Untouched Beaches" },
+                        { cardId: "Card three", back: ("../../assets/img-oceano.jfif") ,firstTitle: "Lombook", secondTitle: "Endless Lava" },
                     ].map(cardsName => (
                         <S.Card
                             key={cardsName.cardId}

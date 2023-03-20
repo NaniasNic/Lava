@@ -17,6 +17,11 @@ export function Header(props: HeadingProps) {
         first: { opacity: 0, y: 70 },
         last: { opacity: 1, y: 0 }
     }
+    
+    const variantsMenu = {
+        first: { opacity: 0, x: -70 },
+        last: { opacity: 1, x: 0 }
+    }
 
     return (
         <S.Container>
@@ -30,7 +35,13 @@ export function Header(props: HeadingProps) {
                 L
             </S.Logo>
 
-            <S.Menu>
+            <S.Menu
+                initial="first"
+                whileInView="last"
+                variants={variantsMenu}
+                viewport={{ once: true, amount: 0.8 }}
+                transition={{ type: "spring", stiffness: 30, delay: 1.5 }}
+            >
                 <a href="">About</a>
 
                 <a href="">Articles</a>

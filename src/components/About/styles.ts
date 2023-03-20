@@ -10,7 +10,7 @@ export const Container = styled.section`
 
 export const LogoWrapper = styled(motion.section)`
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
