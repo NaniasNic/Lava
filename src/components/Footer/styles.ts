@@ -2,18 +2,16 @@ import styled from "styled-components";
 
 import { motion } from "framer-motion";
 
-export const Container = styled.header`
-    width: 100%;
-    height: 60px;
-    color: #fff;
+export const Container = styled.footer`
+    height: 200px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 0 30px;
-    position: fixed;
 
-    @media screen and (max-width: 600px) {
-        justify-content: flex-end;
+    @media screen and (max-width: 520px) {
+        height: 300px;
+        justify-content: center;
     }
 `;
 
@@ -21,7 +19,7 @@ export const Logo = styled(motion.h1)`
     font-size: 36px;
     color: ${props => props.theme.colors.text};
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 520px) {
         display: none;
     }
 `;
@@ -39,6 +37,7 @@ export const Menu = styled(motion.nav)`
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 3px;
+        cursor: pointer;
     }
 
     > h3 {
@@ -47,24 +46,18 @@ export const Menu = styled(motion.nav)`
         text-transform: uppercase;
         letter-spacing: 3px;
         color: ${props => props.theme.colors.text};
-        border: 2px ${props => props.theme.colors.text} solid;
+        cursor: pointer;
     }
 
-    @media screen and (max-width: 600px) {        
+    @media screen and (max-width: 520px) {
+        flex-direction: column;
+
         > a {
-            display: none;
+            font-size: 24px;
         }
 
         > h3 {
-            display: none;
-        }
-
-        > button {
-            display: block;
+            font-size: 24px;
         }
     }
-`;
-
-export const Switch = styled.div`
-    transition: all .5s;
 `;

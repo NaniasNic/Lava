@@ -9,6 +9,11 @@ export function Articles() {
         first: { opacity: 0, y: 70 },
         last: { opacity: 1, y: 0 }
     }
+    
+    const variantsCard = {
+        first: { opacity: 0 },
+        last: { opacity: 1 }
+    }
 
     return (
         <S.Container>
@@ -27,7 +32,13 @@ export function Articles() {
             </S.LogoArticles>
 
             <S.CardsContainer>
-                <S.Card>
+                <S.Card
+                    initial="first"
+                    whileInView="last"
+                    variants={variantsCard}
+                    viewport={{ once: true, amount: 0.8 }}
+                    transition={{ type: "spring", stiffness: 30, delay: 0.8 }}
+                >
                     <div className="img">
                         <img src={Tunza} alt="Tunza" />
                     </div>
@@ -41,7 +52,13 @@ export function Articles() {
                     </div>
                 </S.Card>
                 
-                <S.Card>
+                <S.Card
+                    initial="first"
+                    whileInView="last"
+                    variants={variantsCard}
+                    viewport={{ once: true, amount: 0.8 }}
+                    transition={{ type: "spring", stiffness: 30, delay: 0.8 }}
+                >
                     <div className="img">
                         <img src={Timor} alt="Timor" />
                     </div>
@@ -55,7 +72,13 @@ export function Articles() {
                     </div>
                 </S.Card>
                 
-                <S.Card>
+                <S.Card
+                    initial="first"
+                    whileInView="last"
+                    variants={variantsCard}
+                    viewport={{ once: true, amount: 0.8 }}
+                    transition={{ type: "spring", stiffness: 30, delay: 0.8 }}
+                >
                     <div className="img">
                         <img src={Loombok} alt="Lombook" />
                     </div>

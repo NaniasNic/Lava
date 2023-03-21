@@ -42,7 +42,7 @@ export const LogoArticles = styled(motion.div)`
     }    
 `;
 
-export const CardsContainer = styled(motion.div)`
+export const CardsContainer = styled.div`
     display: flex;
     gap: 40px;
 
@@ -51,7 +51,7 @@ export const CardsContainer = styled(motion.div)`
     }
 `;
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
     width: 400px;
     height: 550px;
     background-color: ${props => props.theme.colors.backgroundCard};
