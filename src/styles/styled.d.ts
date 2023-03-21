@@ -5,11 +5,10 @@ declare module 'styled-components' {
         title: string;
 
         colors: {
-            primary: string;
-            secondary: string;
-            
             background: string;
+            backgroundSub: string;
             backgroundCard: string;
+            
             text: string;
             subText: string;
             desc: string;

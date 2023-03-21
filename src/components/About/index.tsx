@@ -18,7 +18,7 @@ export function About() {
                 whileInView="last"
                 variants={variantsLogo}
                 viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", stiffness: 30, delay: 1.8 }}
+                transition={{ type: "spring", stiffness: 30, delay: 1.5 }}
             >
                 <h1>Lava</h1>
 

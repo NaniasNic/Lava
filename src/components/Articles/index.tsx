@@ -22,7 +22,7 @@ export function Articles() {
                 whileInView="last"
                 variants={variantsLogo}
                 viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", stiffness: 30, delay: 1.1 }}
+                transition={{ type: "spring", stiffness: 30, delay: 0.8 }}
             >
                 <h1>Latest articles</h1>
 
@@ -36,7 +36,7 @@ export function Articles() {
                 whileInView="last"
                 variants={variantsCards}
                 viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", stiffness: 30, delay: 1.3 }}
+                transition={{ type: "spring", stiffness: 30, delay: 1 }}
             >
                 <S.Card>
                     <div className="img">
