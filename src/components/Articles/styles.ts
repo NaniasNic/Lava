@@ -42,7 +42,7 @@ export const LogoArticles = styled(motion.div)`
     }    
 `;
 
-export const CardsContainer = styled.div`
+export const CardsContainer = styled(motion.div)`
     display: flex;
     gap: 40px;
 
@@ -102,5 +102,10 @@ export const Card = styled.div`
         width: 100%;
         height: 100%;
         filter: brightness(0.5);
+    }
+
+    @media screen and (max-width: 430px) {
+        height: 400px;
+        width: 300px;
     }
 `;
