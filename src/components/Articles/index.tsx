@@ -10,11 +10,6 @@ export function Articles() {
         last: { opacity: 1, y: 0 }
     }
 
-    const variantsCards = {
-        first: { opacity: 0, y: 50 },
-        last: { opacity: 1, y: 0 }
-    }
-
     return (
         <S.Container>
             <S.LogoArticles
@@ -31,13 +26,7 @@ export function Articles() {
                 <hr />
             </S.LogoArticles>
 
-            <S.CardsContainer
-                initial="first"
-                whileInView="last"
-                variants={variantsCards}
-                viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", stiffness: 30, delay: 1 }}
-            >
+            <S.CardsContainer>
                 <S.Card>
                     <div className="img">
                         <img src={Tunza} alt="Tunza" />

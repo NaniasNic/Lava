@@ -42,7 +42,7 @@ export const LogoArticles = styled(motion.div)`
     }    
 `;
 
-export const CardsContainer = styled(motion.div)`
+export const CardsContainer = styled.div`
     display: flex;
     gap: 40px;
 
