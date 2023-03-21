@@ -94,4 +94,24 @@ export const InfoWrapper = styled(motion.section)`
         font-size: 16px;
         line-height: 30px;
     }
+
+    @media screen and (max-width: 600px) {
+        text-align: start;
+
+        > h1 {
+            font-size: 2.5rem;
+        }
+
+        > p {
+            line-height: normal;
+            font-size: 20px;
+            padding: 0 80px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        > p {
+            padding: 0 40px;
+        }
+    }
 `;

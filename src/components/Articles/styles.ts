@@ -8,6 +8,10 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 1350px) {
+        height: 250vh;
+    }
 `;
 
 export const LogoArticles = styled(motion.div)`
@@ -41,6 +45,10 @@ export const LogoArticles = styled(motion.div)`
 export const CardsContainer = styled(motion.div)`
     display: flex;
     gap: 40px;
+
+    @media screen and (max-width: 1350px) {
+        flex-direction: column;
+    }
 `;
 
 export const Card = styled.div`
