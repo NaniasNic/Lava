@@ -11,8 +11,8 @@ export function Articles() {
     }
 
     const variantsCards = {
-        first: { opacity: 0, x: -50 },
-        last: { opacity: 1, x: 0 }
+        first: { opacity: 0, y: 50 },
+        last: { opacity: 1, y: 0 }
     }
 
     return (
