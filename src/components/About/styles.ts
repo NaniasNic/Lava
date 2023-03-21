@@ -35,6 +35,29 @@ export const LogoWrapper = styled(motion.section)`
         width: 60px;
         border: 2px ${props => props.theme.colors.text} solid;
     }
+
+    @media screen and (max-width: 600px) {
+        padding: 50px;
+
+        > h3 {
+            font-size: 2rem;
+        }
+
+        > hr {
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        > h1 {
+            font-size: 3rem;
+            line-height: 50px;
+        }
+
+        > h3 {
+            font-size: 1.5rem;
+        }
+    }
 `;
 
 export const InfoWrapper = styled(motion.section)`

@@ -46,9 +46,7 @@ export function Header(props: HeadingProps) {
 
                 <a href="">Articles</a>
 
-                <button>
-                    Sabscribe
-                </button>
+                <h3>sabscribe</h3>
 
                 <Switch 
                     onChange={props.toggleTheme}

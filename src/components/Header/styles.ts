@@ -11,11 +11,19 @@ export const Container = styled.header`
     justify-content: space-between;
     padding: 0 30px;
     position: fixed;
+
+    @media screen and (max-width: 600px) {
+        justify-content: flex-end;
+    }
 `;
 
 export const Logo = styled(motion.h1)`
     font-size: 36px;
     color: ${props => props.theme.colors.text};
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 `;
 
 export const Menu = styled(motion.nav)`
@@ -33,12 +41,26 @@ export const Menu = styled(motion.nav)`
         letter-spacing: 3px;
     }
 
-    > button {
+    > h3 {
         padding: 5px 10px;
         background-color: transparent;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: ${props => props.theme.colors.text};
         border: 2px ${props => props.theme.colors.text} solid;
+    }
+
+    @media screen and (max-width: 600px) {        
+        > a {
+            display: none;
+        }
+
+        > h3 {
+            display: none;
+        }
+
+        > button {
+            display: block;
+        }
     }
 `;
